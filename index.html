@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    </head>
+
+
+<body>
+    <style>
+        *{
+            padding: 0px 10px 0px 10px;
+        }
+        .left {
+            /* background-color: aliceblue; */
+            /* padding: 15px; */
+            box-shadow: 5px 10px 5px #aaaaaa;
+
+        }
+
+        .middle {
+            /* background-color: greenyellow;  */
+            /* padding: 15px; */
+            box-shadow: 5px 10px 5px #aaaaaa;
+
+        }
+        img{
+            width: 100%;
+            /* height: 50%; */
+        }
+
+        .right {
+            /* background-color: orchid; */
+            /* padding: 15px; */
+            /* box-shadow: 0px 10px 0px #aaaaaa; */
+        }
+        header{
+            background-color: white !important;
+            box-shadow: 0px 1px 0px #aaaaaa;
+           
+        }
+        nav{
+            box-shadow: 0px 0px 0px #aaaaaa;
+            background-color: white !important;
+
+        }
+        .card1{
+            border:2px solid #F2F2F2! important;
+            background-color: #F2F2F2;
+            margin-bottom: 5%;
+            border-radius: 8%;
+            width: 100%;
+        }
+    </style>
+    
+    <header style="background-color:white;">
+      
+          <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: white !important;">
+            <div class="container-fluid" style="display: block; ">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <span >
+                <div class="d-none d-xl-block  d-md-block d-lg-block" style="width: 200px; text-align: center; justify-items: center;  position: relative;">
+              <span style="font-weight: 600; font-size:50px ;font-family: Tahoma, Verdana, sans-serif; position: absolute;
+              top: 15px;" ><img src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt=""></span>
+            </div>
+              <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 38px;">
+                <div>
+                    <div style="display: flex; justify-content:flex-end; "><div style="padding: 5px;align-items:center;"> Sign In/Jion Ajio &nbsp &nbsp</div> <div style="padding: 5px; ">Costmer Care &nbsp &nbsp</div> <div style="padding: 5px;align-items:center; background-color: black;color: white;">VIST AJIOLUXE</div> </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; justify-content:center; padding-left: 20%; ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> &nbsp &nbsp  MEN </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">&nbsp &nbsp  WOMEN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">&nbsp &nbsp  KIDS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">&nbsp &nbsp  Home/KITCHEN</a>
+                  </li>
+                
+               
+                </ul>
+                <form class="d-flex " style="display: flex; justify-content:flex-end; background-color: FFFDED;" >
+                  <input  style="width: 50%; margin-top: 1%; background-color: #FFFDED; border-radius: 25px;"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                  <span style="padding: 5px;" >
+                   <img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="">
+</span>
+  <span style="padding: 5px;">
+    <i class="fa fa-archive" style="font-size:35px"></i>
+                </span>
+                </form>
+                
+                
+            </div>
+        </span>
+
+             
+            </div>
+            </div>
+          </nav>
+
+      
+    </header>
+
+
+    <main>
+        <div class="container-fluid" style="box-shadow: 0px 0px 10px #aaaaaa; padding: 5px;">
+            <nav aria-label="breadcrumb" style="background-color: white !important; color:rgb(184, 181, 181) !important;">
+                <!-- <ol class="breadcrumb" style="background-color: white !important; color:black !important;">
+                  <li class="breadcrumb-item " style="background-color: white !important; color:black !important;"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active " style="background-color: white !important; color:black !important;"><a href="#">D2C Fasion</a></li>
+                 
+                </ol> -->
+                <span>Home</span> &nbsp / &nbsp<span>D2C Fashion</span>
+              </nav>
+            <div class="row">
+                <div class="left col-xs-12 col-md-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item" style="background-color: white !important; border: 3px solid white;">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: white !important; color:black">
+                                    Refine By
+                                </button>
+                                
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body" style="display: flex; flex-direction: column;">
+                                    <h4> - Gender</h4>
+                                 <span><input type="checkbox">&nbsp men(678)</span> 
+                                  <span><input type="checkbox">&nbsp women(678)</span> 
+                                  <span><input type="checkbox">&nbsp kids(678)</span> 
+                                  
+                                  <span>MORE</span>
+                                  <hr>
+                                  <h4> - Catagory</h4>
+                                 <span><input type="checkbox">&nbsp men(678)</span> 
+                                  <span><input type="checkbox">&nbsp men(678)</span> 
+                                  <span><input type="checkbox">&nbsp men(678)</span> 
+                                  <span><input type="checkbox">&nbsp men(678)</span> 
+                                  <span><input type="checkbox">&nbsp men(678)</span> 
+                                  <span><input type="checkbox">&nbsp men(678)</span> 
+                                  <span>MORE</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr>
+                       <h5>MORE FILTERS</h5>
+                       <P>Please select upto3 categor view more filters</P>
+                       <button type="button" class="btn btn-dark"> SELECT CATEGORY</button>
+                    </div>
+                </div>
+                <div class="middle col-xs-12  col-md-6">
+                    <h1 style="text-align: center;"> FootWear</h1>
+                    <hr>
+                    <div style=" padding-left: 5px; padding-right: 5px; background-color: #F7F7F7; width:100%; display: flex;  justify-content: space-between; height: 5%; align-items: center;" >
+                       <div >104,252 Items Found</div><div ><img src="./imagclip.PNG" alt=""></div>
+                       <div ><span> SORTED BY <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select></span></div>
+                    </div>
+                    <hr>
+                    <div style="flex-wrap: wrap; gap:5px; justify-content: center;">
+                        <div class=" col-sm-12     col-md-4 col-lg-3 ">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20230614/x5bC/6489d616d55b7d0c636af2aa/-473Wx593H-469430392-navy-MODEL2.jpg"
+                                    alt="">
+                                <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                <P style="text-align: justify; margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                <p style="text-align: justify; margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12  col-md-4 col-lg-3">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20230524/1Lta/646e3fded55b7d0c63d69d8c/-473Wx593H-469473289-blackgrey-MODEL.jpg"
+                                    alt="">
+                                <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                <P style="text-align: justify; margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                <p style="margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12   col-md-4 col-lg-3">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20211224/7S0q/61c4c0c9aeb26901101a256b/-473Wx593H-469034006-black-MODEL.jpg"
+                                    alt="">
+                                <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                <P style="margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                <p style="margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            </div>
+
+                        </div>
+                        <div class=" col-sm-12   col-md-4 col-lg-3">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20211111/51St/618d0e63f997ddf8f101dea0/-473Wx593H-460991629-clearblack-MODEL.jpg"
+                                    alt="">
+                                <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                <P style="margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                <p style="margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12   col-md-4 col-lg-3">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20211111/K1ep/618d0cffaeb2690110c0d9eb/-473Wx593H-460991629-grey-MODEL.jpg"
+                                    alt="">
+                                <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                <P style="margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                <p style="margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12 col-md-4 col-lg-3">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20211224/1tuJ/61c4c229aeb26901101a2a6a/-473Wx593H-469034008-black-MODEL.jpg"
+                                    alt="">
+                                    <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                    <P style="margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                    <p style="margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                    <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            
+                            </div>
+
+                        </div>
+                        <div class=" col-sm-12 col-md-4 col-lg-3">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20211224/1tuJ/61c4c229aeb26901101a2a6a/-473Wx593H-469034008-black-MODEL.jpg"
+                                    alt="">
+                                    <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                    <P style="margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                    <p style="margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                    <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            
+                            </div>
+
+                        </div>
+                        <div class=" col-sm-12 col-md-4 col-lg-3">
+                            <div class="card card1" style="border:2px solid white">
+
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20211224/1tuJ/61c4c229aeb26901101a2a6a/-473Wx593H-469034008-black-MODEL.jpg"
+                                    alt="">
+                                    <p style="margin-bottom:0px; color:#C1AE91; text-align: center;">U.S.POLO ASSN.</p>
+                                    <P style="margin-bottom:0px; padding-left: 3px;">Slip-On Loafers with Logo</P>
+                                    <p style="margin-bottom:0px; padding-left: 3px;">Rs 1,759</p>
+                                    <p style="margin-bottom:0px; color:green;text-align: center;">offer</p>
+                            
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div  class="right col-sm-12 col-md-3">
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
